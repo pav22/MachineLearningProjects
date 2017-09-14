@@ -1,5 +1,11 @@
 package emailspamfilter
 
+import org.apache.spark.SparkConf
+import org.apache.spark.SparkContext
+import org.apache.spark.mllib.classification.LogisticRegressionWithSGD
+import org.apache.spark.mllib.feature.HashingTF
+import org.apache.spark.mllib.regression.LabeledPoint
+
 object EmailSpamFilter {
 
   def main(args: Array[String]): Unit = {
